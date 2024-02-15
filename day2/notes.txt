@@ -1,0 +1,9 @@
+https://scrimba.com/learn/javascriptmas/day-2-style-a-colorful-button-cW2dVzuL
+
+button 1 (HTML & CSS) - uses the first solution , wrap div around button and use background-image property and padding to create the border-gradient effect
+
+button 2 (HTML & CSS) - uses only itself with no wrapped div. It uses the border-image , border-width , and border-style to create the gradient . 
+
+button 3 (JS) - dynamically created a div and button. Appended to the DOM and added Button1's 'container1' and 'btn1' classes.
+
+button 4 (JS) - reflection of button 2. Dynamically created and styled throught JS

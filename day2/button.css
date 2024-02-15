@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16.25px;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #1E1F25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+}
+
+body{
+  min-height : 100vh;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+
+button {
+  min-width: 300px;
+  padding : 25px 75px;
+  font-size: 2.5rem;
+}
+
+.container1{
+  padding : 3px;
+  background-image: linear-gradient(115deg, var(--grad-color1) , var(--grad-color2) ,var(--grad-color3) , var(--grad-color4) , var(--grad-color5));
+  transition : 0.3s;
+}
+
+.btn1 , #btn2 {
+  background-color: var(--btn-bg);
+  color : var(--btn-color);
+  border-style: none;
+}
+
+#btn2{
+  border-image: linear-gradient(-115deg, var(--grad-color1) , var(--grad-color2) ,var(--grad-color3) , var(--grad-color4) , var(--grad-color5)) 30;
+  border-width: 3px;
+  border-style: solid;
+  transition : 0.3s;
+}
+
+.btn1:hover, #btn2:hover{
+  color : var(--btn-color-hover);
+}
+
+#btn2:hover{
+  transform : scale(1.05);
+  border-image: linear-gradient(115deg, var(--grad-color1) , var(--grad-color2) ,var(--grad-color3) , var(--grad-color4) , var(--grad-color5)) 30;
+}
+
+ .container1:hover{
+  transform : scale(1.05);
+  background-image: linear-gradient(295deg, var(--grad-color1) , var(--grad-color2) ,var(--grad-color3) , var(--grad-color4) , var(--grad-color5));
+}
+
+
+
+
