@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --progressbar-bg: lightgrey;
+  --start: red;
+  --middle: blue;
+  --finish: green;
+} 
+
+body{
+  min-height: 100vh;
+ 
+}
+
+body, .container{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 300px;
+  height: 150px;
+  background-color: rgb(195, 195, 195);
+  border-radius: 5px;
+}
+
+.progress-bar{
+  background-color: var(--progressbar-bg);
+  height : 30px;
+  width : 80%;
+  border-radius: 30px;
+}
+
+.progress-status{
+  animation-duration: 8s;
+  animation-name : progress;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+ 
+}
+
+@keyframes progress {
+  0% {background-color: var(--start); width : 15%}
+  50% {background-color: var(--middle);}
+ 
+  85% {background-color: var(--finish); width : 100%}
+  100% { background-color: var(--finish); width : 100%}
+  
+}
