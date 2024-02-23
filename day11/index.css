@@ -1,0 +1,31 @@
+:root { 
+  --white: #fff;
+  --red: #FF0002;
+}
+
+.flag{
+  background-color: var(--red);
+  height : 300px;
+  width: 300px;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cross{
+  background-color: var(--white);
+}
+
+.cross1{
+  height : 62.5%;
+  width : 18.75%;
+  position: absolute;
+}
+
+.cross2{
+  height : 18.75%;
+  width : 62.5%;
+  position: absolute;
+}
+
