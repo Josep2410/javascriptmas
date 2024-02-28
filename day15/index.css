@@ -1,0 +1,49 @@
+:root {
+  --black: #282828; 
+  --blue: #2892f9; 
+  --red: #fb2f27;
+  --yellow: #fdfe29;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+
+.ringsContainer{
+  min-height : 100vh;
+}
+
+.ring{
+  border-radius: 50%;
+}
+
+.ringsContainer , .ring{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring-1{
+  height : 300px;
+  width : 300px; 
+  background-color: black;    
+}
+
+.ring-2{
+  height : 225px ;
+  width : 225px; 
+  background-color: #2893F8;    
+}
+
+.ring-3{
+  height : 150px ;
+  width : 150px; 
+  background-color: red;    
+}
+
+.bullseye{
+  height : 75px ;
+  width : 75px; 
+  background-color: yellow;    
+}
