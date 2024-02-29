@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>🎅 Naughty List, Nice List 🎁</h1>
+    <section id="addPersonsContainer">
+      <input type="text" id="addNames" placeholder="add name" />
+      <div>
+        <p>Has this person been naughty or nice ?</p>
+        <input type="radio" id="niceRadio" name="naughty-nice" value="true" />
+
+        <label>nice</label>
+        <input
+          type="radio"
+          id="naughtyRadio"
+          name="naughty-nice"
+          value="false"
+        />
+        <label>naughty</label>
+      </div>
+    </section>
+    <div class="container">
+      <div>
+        <h2>Nice List</h2>
+        <ul class="list nice-list" id="nice-list"></ul>
+      </div>
+      <div>
+        <h2>Naughty List</h2>
+        <ul class="list naughty-list" id="naughty-list"></ul>
+      </div>
+    </div>
+
+    <div>
+      <button id="btn" type="button">Sort</button>
+      <button id="addPerson">Add</button>
+      <button id="switchBtn">Switch</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
