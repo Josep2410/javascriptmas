@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+h1::after{
+  content : " snakes and butterflies ";
+  background-color : blue;
+  color : white;
+  padding : 3px ;
+  border-radius: 5px;
+  animation-name : carousel;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+ 
+}
+
+
+@keyframes carousel {
+ 
+  25% {content : "shawarmas and indian food";}
+  50% {content : "lifting weights";}
+  75% {content : "chainsaw man";}
+  
+}
